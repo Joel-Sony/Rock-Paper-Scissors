@@ -1,0 +1,59 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+h1{
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 100px;
+    font-size: 50px;
+    font-weight: 600px;
+}
+body{
+    background-color: #845ec2;
+}
+section{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top:40px;
+    flex-direction:column;
+    text-align: center;
+    gap:15px;
+    background-color: #d65db1;
+    width:600px;
+    margin:10px auto;
+    border:solid black 5px;
+    padding-top:30px;
+    border-radius: 30px;
+}
+
+footer{
+    margin-top:40px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+p{
+    margin:0 auto;
+}
+button{
+    width:200px;
+    text-align:center;
+    margin:30px auto;  
+    padding:30px 50px;
+    font-weight:700;
+    font-size:20px;
+    background: #c4fcef ;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+    border:solid black 2px;
+    border-radius:10px;
+}
