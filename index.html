@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,18 +15,47 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
         <h1>Rock Paper Scissors </h1>
     </header>
-
     <main>
-        <section>
-            <p >Open the developer console to play the game!</p>
-            <p>Type either Rock, Paper or Scissors </p>
-            <button onclick = "game()"> Press to Play! </button>
-        </section>
-        
+       <div class="choiceContainer">
+        <div class="hchoice">
+            <p>Your Choice</p>
+            <img class="chosenChoice" src="./images/140215.png">
+        </div>
+        <div class="result">
+            <p id="resultRemove">Result</p>
+            <h2>Choose an Option from Below</h2>
+        </div>
+        <div class="cchoice">
+            <p>Computer's Choice</p>
+            <img class="chosenChoice" src="./images/140215.png">
+        </div>
+       </div>
+
+       <div class="choiceBoxes">
+        <div id="humanScoreBox">
+            <p>Your Score</p>
+            <p id="score">0</p>
+        </div>
+        <div class="choiceBoxContainer">
+            <button ><img id="rock"src="./images/140215.png"></button>
+            <p>Rock</p>
+        </div>
+        <div class="choiceBoxContainer">
+            <button ><img id="paper" src="./images/140217.png"></button>
+            <p>Paper</p>
+        </div>
+        <div class="choiceBoxContainer">
+            <button ><img id="scissor" src="./images/140216.png"></button>
+            <p>Scissors</p>
+        </div>
+        <div id="computerScoreBox">
+            <p>Computer's Score</p>
+            <p id="score">0</p>
+        </div>
+       </div>
     </main>
 
     <footer>
