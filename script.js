@@ -29,73 +29,82 @@
         let removal=document.querySelector("#resultRemove")
         switch(target.id){
             case("rock"):{
+                hchoice.lastElementChild.src="./images/140215.png";
                 if(cc=="Rock"){
+                    cchoice.lastElementChild.src="./images/140215.png";
                     console.log("Draw");
-                    let content="It's a Draw";
-                    
+                    content="It's a Draw";
                 }
                 else if(cc=='Scissors'){
+                    cchoice.lastElementChild.src="./images/140216.png";
                     console.log("You win this Round");
                     content="You win this Round";
                     hscore++;
                 }
                 else if(cc=='Paper'){
+                    cchoice.lastElementChild.src="./images/140217.png";
                     console.log("The Computer wins this round!");
-                    let container = document.createElement("h2");
+                    container = document.createElement("h2");
                     content="The Computer wins this Round";
                     cscore++;
                 }   
                 container.textContent=content;
-                removal = document.querySelector("#resultRemove")
-                console.log(`removal: ${removal}`);
-                result.removeChild(removal);
+                result.removeChild(result.lastElementChild);
                 result.appendChild(container);
                 break;
             }
             case("paper"):{
+                hchoice.lastElementChild.src="./images/140217.png";
                 if(cc=="Paper"){
+                    cchoice.lastElementChild.src="./images/140217.png";
                     console.log("Draw");
                     content="It's a Draw";
-                    
                 }
                 else if(cc=='Rock'){
+                    cchoice.lastElementChild.src="./images/140215.png";
                     console.log("You win this Round");
                     content="You win this Round";
                     hscore++;
                 }
                 else if(cc=='Scissors'){
+                    cchoice.lastElementChild.src="./images/140216.png";
                     console.log("The Computer wins this round!");
                     content="The Computer wins this Round";
                     cscore++;
                 }
                 container.textContent=content;
                 removal = document.querySelector("#resultRemove")
-                result.removeChild(removal);
+                result.removeChild(result.lastElementChild);
                 result.appendChild(container);
                 break;
             }
             case("scissor"):{
+                hchoice.lastElementChild.src="./images/140216.png";
                 if(cc=="Scissors"){
+                    cchoice.lastElementChild.src="./images/140216.png";
                     console.log("Draw");
-                    let content="It's a Draw";
+                    content="It's a Draw";
                 }
                 else if(cc=='Paper'){
+                    cchoice.lastElementChild.src="./images/140217.png";
                     console.log("You win this Round");
                     content="You win this Round";
                     hscore++;
                 }
                 else if(cc=='Rock'){
+                    cchoice.lastElementChild.src="./images/140215.png";
                     console.log("The Computer wins this round!");
                     content="The Computer wins this Round";
                     cscore++;
                 }
                 container.textContent=content;
                 removal = document.querySelector("#resultRemove")
-                result.removeChild(removal);
+                result.removeChild(result.lastElementChild);
+
                 result.appendChild(container);
             }
-        }
-        result = document.querySelector(result.lastElementChild);
-        result.id="resultRemove";  
+        }  
         console.log (`Hscore ${hscore} Cscore: ${cscore}` );
+        hscoreBox.lastElementChild.textContent=hscore;
+        cscoreBox.lastElementChild.textContent=cscore;
     })

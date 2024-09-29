@@ -42,11 +42,12 @@ footer{
 
 .hchoice p{
     margin-left:120px;
+    font-weight:700;
 }
 
 .cchoice p{
     margin-left:30px;
-    
+    font-weight:700;
 }
 
 .result h2{
@@ -56,6 +57,8 @@ footer{
 
 .result p{
     text-align: center;
+    font-weight: 800;
+    font-size: 35px;
 }
 
 .choiceContainer{
@@ -90,8 +93,10 @@ footer{
     transform: scale(1.02);
 }
 
-.scoreBox{
+#humanScoreBox,#computerScoreBox{
     text-align: center;
+    font-size:20px;
+    font-weight: 500;
     /* margin-right:40px; */
 
 }
